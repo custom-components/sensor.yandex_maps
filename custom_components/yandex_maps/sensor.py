@@ -11,7 +11,7 @@ import homeassistant.helpers.config_validation as cv
 from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.helpers.entity import Entity
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 CONF_NAME = 'name'
 CONF_START = 'start'
@@ -60,7 +60,7 @@ class YandexMapsSensor(Entity):
                 latitude = state.attributes.get('latitude')
                 longitude = state.attributes.get('longitude')
                 if latitude and longitude:
-                    start = "{},{}".format(str(latitude), str(longitude))
+                    start = "{},{}".format(str(longitude), str(latitude))
         if start is None:
             start = self._start
         try:
