@@ -60,7 +60,7 @@ class YandexMapsSensor(Entity):
                 latitude = state.attributes.get('latitude')
                 longitude = state.attributes.get('longitude')
                 if latitude and longitude:
-                    start = "{},{}".format(str(latitude), str(longitude))
+                    start = "{},{}".format(str(longitude), str(latitude))
         if start is None:
             start = self._start
         try:
