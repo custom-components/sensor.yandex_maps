@@ -11,7 +11,7 @@ import homeassistant.helpers.config_validation as cv
 from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.helpers.entity import Entity
 
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 CONF_NAME = 'name'
 CONF_START = 'start'
