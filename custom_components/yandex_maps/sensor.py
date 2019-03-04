@@ -68,6 +68,7 @@ class YandexMapsSensor(Entity):
             info = requests.get(url).json()
             self._state = info.get('direct', {}).get('time')
             self.attr = {
+                'mapurl': info.get('direct', {}).get('mapUrl'),
                 'jamsrate': info.get('jamsRate'),
                 'jamsmeasure': info.get('jamsMeasure')
             }
