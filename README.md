@@ -29,8 +29,8 @@ sensor:
 key | type | description  
 :--- | :--- | :---  
 **platform (Required)** | string | The platform name.
-**start (Required)** | string | Entity ID of a device_tracker with `latitude` and `longitude` attributes, or GPS coordinates like `'29.361133,54.991133'`
-**destination (Required)** | string | GPS coordinates like `'29.361133,54.991133'`.
+**start (Required)** | string | Entity ID of a device_tracker or zone with `latitude` and `longitude` attributes, or GPS coordinates like `'29.361133,54.991133'`.
+**destination (Required)** | string | Entity ID of a device_tracker or zone with `latitude` and `longitude` attributes, or GPS coordinates like `'29.361133,54.991133'`.
 **name (Required)** | string | Name of the sensor.
 
 ***
