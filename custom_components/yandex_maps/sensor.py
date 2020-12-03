@@ -17,7 +17,7 @@ from homeassistant.const import TIME_MINUTES, TIME_HOURS
 
 coords_re = re.compile(r'-?\d{1,2}\.\d{1,6},\s?-?\d{1,3}\.\d{1,6}')
 
-__version__ = '0.0.6'
+__version__ = '0.0.7'
 
 CONF_NAME = 'name'
 CONF_START = 'start'
