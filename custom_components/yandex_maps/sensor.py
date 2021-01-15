@@ -80,7 +80,7 @@ class YandexMapsSensor(Entity):
                     assert resp.status == 200
                     info = await resp.json()
 
-                    self._state = int(info.get('direct', {}).get('time'))
+                    self._state = info.get('direct', {}).get('time')
                     self.attr = {
                         'mapurl': info.get('direct', {}).get('mapUrl'),
                         'jamsrate': info.get('jamsRate'),
@@ -96,6 +96,7 @@ class YandexMapsSensor(Entity):
 
     @classmethod
     def humanize(cls, minutes):
+        minutes = int(minutes)
         _LOGGER.debug('Passed time: %s', minutes)
         if minutes <= 60:
             return "{}{}".format(minutes, TIME_MINUTES)
